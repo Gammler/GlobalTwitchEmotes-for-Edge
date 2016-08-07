@@ -1,0 +1,30 @@
+{
+    "author": "Patrick Krämer",
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "description": "Twitch culture wherever you go! This extension replaces all Twitch.tv emote phrases with their actual emoticons.",
+    "icons": {
+        "16": "logo/16.png",
+        "48": "logo/48.png",
+        "128": "logo/128.png"
+    },
+    "Key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApUaUZWMmF1baSP+28rMzVc17bZklQ9pPCUIqNscPw8LQ+9QSHttVcG40mf3lfgLFQq+lA8AMtP3Fwt8hplfyWFqIF7G7XJjM65E4hGONQpiCv3Vc9NGWuCBnDEujGH8QIa4I8qaS/eulnKA5tg3sBGEGl0NeWOfnG7A7LwLn9orLp4v21Lo/I7ukx9fBWD/xjM9WT1mnl50M8HT9nmkWRsLe+WKZCCTov4984W+6tq7fijiHySNxpgFMKHen4btnz+2w9SyTnNxp1YQrnxIhFOZZZRbKZrIyeECNjZUri8DxHpYzGc81825bnvv42RlzWuBbXlaeSiTi2QhOLpFbgwIDAQAB",
+    "manifest_version": 2,
+    "name": "Global Twitch Emotes",
+    "options_page": "data/options/options.html",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "http://*/",
+        "https://*/"
+    ],
+    "short_name": "GTE",
+    "version": "1.1.1021",
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
+}
